@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/HexRaysSA/ida-hcli/refs/heads/v0.9.0/docs/reference/ida-plugin.schema.json",
+  "IDAMetadataDescriptorVersion": 1,
+  "plugin": {
+    "name": "icp",
+    "entryPoint": "icp.py",
+    "version": "1.3",
+    "idaVersions": [  "9.2" ],
+    "description": "IDA's Command Palette - Commands, names, functions, structures, etc. all accessible from one place.",
+    "license": "MIT",
+    "urls": {
+      "repository": "https://github.com/rand-tech/idaplugins"
+
+    },
+    "authors": [
+      {
+        "name": "rand0m",
+        "email": "54098069+rand-tech@users.noreply.github.com"
+      }
+    ],
+    "pythonDependencies": [ ],
+    "categories": [
+      "ui-ux-and-visualization"
+    ],
+    "keywords": [
+      "reverse-engineering",
+      "command palette",
+      "hotkeys",
+      "productivity"
+    ]
+  }
+}
