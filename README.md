@@ -1,5 +1,10 @@
 # idaplugins
 
+
+* navigator.py
+  > Provides shortcuts to navigate between functions and data items
+  > j to go to next item, k to go to previous item
+
 * funcfiletree.py
   > Display functions grouped by source file
 
