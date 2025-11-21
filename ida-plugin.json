@@ -1,0 +1,28 @@
+{
+  "IDAMetadataDescriptorVersion": 1,
+  "plugin": {
+    "name": "funcfiletree",
+    "entryPoint": "funcfiletree.py",
+    "version": "1.0",
+    "description": "Display functions grouped by source file. Useful when analyzing rust samples",
+    "license": "MIT",
+    "urls": {
+      "repository": "https://github.com/rand-tech/idaplugins"
+    },
+    "authors": [
+      {
+        "name": "rand0m",
+        "email": "54098069+rand-tech@users.noreply.github.com",
+      }
+    ],
+    "pythonDependencies": [],
+    "categories": [
+      "ui-ux-and-visualization"
+    ],
+    "keywords": [
+      "rust",
+      "llvm",
+      "go"
+    ]
+  }
+}
