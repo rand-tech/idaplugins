@@ -1,9 +1,11 @@
 {
+  "$schema": "https://raw.githubusercontent.com/HexRaysSA/ida-hcli/refs/heads/v0.9.0/docs/reference/ida-plugin.schema.json",
   "IDAMetadataDescriptorVersion": 1,
   "plugin": {
     "name": "funcfiletree",
     "entryPoint": "funcfiletree.py",
     "version": "1.0",
+    "idaVersions": [ "9.0", "9.1"],
     "description": "Display functions grouped by source file. Useful when analyzing rust samples",
     "license": "MIT",
     "urls": {
@@ -12,14 +14,15 @@
     "authors": [
       {
         "name": "rand0m",
-        "email": "54098069+rand-tech@users.noreply.github.com",
+        "email": "54098069+rand-tech@users.noreply.github.com"
       }
     ],
-    "pythonDependencies": [],
+    "pythonDependencies": [ ],
     "categories": [
       "ui-ux-and-visualization"
     ],
     "keywords": [
+      "reverse-engineering",
       "rust",
       "llvm",
       "go"
