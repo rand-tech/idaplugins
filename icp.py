@@ -200,8 +200,8 @@ class PaletteDialog(QtWidgets.QDialog):
         shortcut_context = QtCore.Qt.ShortcutContext.WidgetWithChildrenShortcut
         QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Key.Key_Down), self, activated=lambda: self._move_selection(1), context=shortcut_context)
         QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Key.Key_Up), self, activated=lambda: self._move_selection(-1), context=shortcut_context)
-        QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Modifier.META | QtCore.Qt.Key.Key_N), self, activated=lambda: self._move_selection(1), context=shortcut_context)
-        QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Modifier.META | QtCore.Qt.Key.Key_P), self, activated=lambda: self._move_selection(-1), context=shortcut_context)
+        QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Modifier.META.value | QtCore.Qt.Key.Key_N.value), self, activated=lambda: self._move_selection(1), context=shortcut_context)
+        QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Modifier.META.value | QtCore.Qt.Key.Key_P.value), self, activated=lambda: self._move_selection(-1), context=shortcut_context)
         QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Key.Key_PageDown), self, activated=lambda: self._move_selection(7), context=shortcut_context)
         QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Key.Key_PageUp), self, activated=lambda: self._move_selection(-7), context=shortcut_context)
         QtGui.QShortcut(QtGui.QKeySequence(QtCore.Qt.Key.Key_Return), self, activated=lambda: self._activate_item(self._list.currentItem()), context=shortcut_context)
